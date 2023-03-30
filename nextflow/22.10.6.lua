@@ -4,11 +4,11 @@
 --
 --
 whatis("Name : nextflow")
-whatis("Version : 22.04.5")
+whatis("Version : 22.10.6")
 help([[Nextflow enables scalable and reproducible scientific workflows using software containers]])
 
 prepend_path("PATH", "/cluster/work/nme/software/apps/nextflow/nf_pipelines")
-prepend_path("PATH", "/cluster/work/nme/software/apps/nextflow/22.04.5")
+prepend_path("PATH", "/cluster/work/nme/software/apps/nextflow/22.10.6")
 
 load("openjdk")
 load("eth_proxy")
