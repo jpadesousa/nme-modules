@@ -19,6 +19,7 @@ setenv("NXF_TMP", pathJoin("/scratch/",os.getenv("USER"),"NXF"))
 setenv("NXF_OPTS", "-Xms1g -Xmx4g")
 setenv("NXF_EXECUTOR", "slurm")
 setenv("NXF_ANSI_LOG", "false")
+setenv("NXF_VER", "22.10.6")
 setenv("NXF_SINGULARITY_CACHEDIR", os.getenv("SINGULARITY_CACHEDIR"))
 setenv("NXF_ASSETS", "/cluster/work/nme/tmp/.nextflow_assets")
 
