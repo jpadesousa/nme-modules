@@ -22,6 +22,8 @@ setenv("NXF_ANSI_LOG", "false")
 setenv("NXF_VER", "22.10.6")
 setenv("NXF_SINGULARITY_CACHEDIR", os.getenv("SINGULARITY_CACHEDIR"))
 setenv("NXF_ASSETS", "/cluster/work/nme/tmp/.nextflow_assets")
+setenv("HTTP_PROXY", "http://proxy.ethz.ch:3128")
+setenv("HTTPS_PROXY", "https://proxy.ethz.ch:3128")
 
 -- Setting alias for NextFlow
 set_alias("snextflow",       "sbatch -n 1 --cpus-per-task=1 --mem-per-cpu=4096 --time=4:00:00")
