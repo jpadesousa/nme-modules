@@ -12,7 +12,6 @@ prepend_path("LD_LIBRARY_PATH", "/cluster/work/nme/software/apps/gcc-8.2.0/nf-co
 
 -- Required modules
 load("gcc/8.2.0")
-
 load("python")
 load("nextflow")
 load("eth_proxy")
