@@ -19,6 +19,6 @@ execute {cmd="rm -f ~/.cache/rstudio/secure-cookie-key ~/.cache/rstudio/session-
 
 -- Create a .Renviron file in the home folder
 execute {cmd="echo http_proxy=${http_proxy-'http://proxy.ethz.ch:3128'} > ~/.Renviron", modeA={"load"}}
-execute {cmd="echo https_proxy=${https_proxy-'https://proxy.ethz.ch:3128'} >> ~/.Renviron", modeA={"load"}}
+execute {cmd="echo https_proxy=${https_proxy-'http://proxy.ethz.ch:3128'} >> ~/.Renviron", modeA={"load"}}
 execute {cmd="echo R_HISTSIZE=100000 >> ~/.Renviron", modeA={"load"}}
-execute {cmd="echo R_LIBS_USER=/library/R/rocker/4.3.1 >> ~/.Renviron", modeA={"load"}}
+execute {cmd="echo R_LIBS_USER=/library/R/rocker/4.3.1:$CONDA_RPACKAGES_ENV/lib/R/library >> ~/.Renviron", modeA={"load"}}
