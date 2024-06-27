@@ -11,5 +11,4 @@ prepend_path("PATH", "/cluster/work/nme/software/apps/gcc-8.2.0/multiqc/1.16/bin
 prepend_path("PYTHONPATH", "/cluster/work/nme/software/apps/gcc-8.2.0/multiqc/1.16/")
 
 -- Required modules
-load("gcc/8.2.0")
 load("python")

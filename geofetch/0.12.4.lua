@@ -12,7 +12,6 @@ prepend_path("PYTHONPATH", "/cluster/work/nme/software/apps/gcc-8.2.0/geofetch/0
 prepend_path("LD_LIBRARY_PATH", "/cluster/work/nme/software/apps/gcc-8.2.0/geofetch/0.12.4")
 
 -- Required modules
-load("gcc/8.2.0")
 load("python")
 load("sra-toolkit")
 load("eth_proxy")
