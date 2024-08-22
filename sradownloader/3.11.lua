@@ -8,8 +8,5 @@ help([[SRAdownloader is a program which takes the annotation table from the SRA 
 
 load("eth_proxy")
 
--- Set the path to the Singularity image
-local singularity_image = "/cluster/work/nme/software/apps/sradownloader/3.11/sradownloader-axel_3.11.sif"
-
--- Set an alias
-set_alias("sradownloader", "singularity exec --bind /cluster:/cluster " .. singularity_image .. " sradownloader")
+-- Add to PATH
+prepend_path("PATH", "/cluster/work/nme/software/apps/sradownloader/3.11")

@@ -8,9 +8,5 @@ help([[geofetch is a command-line tool that downloads sequencing data and metada
 
 load("eth_proxy")
 
--- Set the path to the Singularity image
-local singularity_image = "/cluster/work/nme/software/apps/geofetch/0.12.6/geofetch_0.12.6.sif"
-
--- Set an alias
-set_alias("geofetch", "singularity exec --bind /cluster:/cluster " .. singularity_image .. " geofetch")
-set_alias("sraconvert", "singularity exec --bind /cluster:/cluster " .. singularity_image .. " sraconvert")
+-- Add to PATH
+prepend_path("PATH", "/cluster/work/nme/software/apps/geofetch/0.12.6")
