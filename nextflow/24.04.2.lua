@@ -7,7 +7,7 @@ whatis("Name : nextflow")
 whatis("Version : 24.04.2")
 help([[Nextflow enables scalable and reproducible scientific workflows using software containers]])
 
-prepend_path("PATH", "/cluster/work/nme/software/apps/nextflow/nf_pipelines")
+prepend_path("PATH", "/cluster/work/nme/software/pipelines/nf_rnaseq")
 prepend_path("PATH", "/cluster/work/nme/software/apps/nextflow/24.04.2")
 
 load("openjdk")
@@ -22,9 +22,9 @@ setenv("NXF_ANSI_LOG", "false")
 setenv("NXF_VER", "24.04.2")
 setenv("NXF_SINGULARITY_CACHEDIR", os.getenv("APPTAINER_CACHEDIR"))
 setenv("NXF_ASSETS", "/cluster/work/nme/tmp/.nextflow_assets")
-setenv("HTTP_PROXY", "http://proxy.ethz.ch:3128")
-setenv("HTTPS_PROXY", "http://proxy.ethz.ch:3128")
-setenv("FTP_PROXY", "http://proxy.ethz.ch:3128")
+setenv("HTTP_PROXY", "http://proxy.service.consul:3128")
+setenv("HTTPS_PROXY", "http://proxy.service.consul:3128")
+setenv("FTP_PROXY", "http://proxy.service.consul:3128")
 setenv("NXF_OFFLINE", "TRUE")
 
 -- Setting alias for Nextflow
