@@ -8,6 +8,11 @@ whatis("Version : 24.04.2")
 help([[Nextflow enables scalable and reproducible scientific workflows using software containers]])
 
 prepend_path("PATH", "/cluster/work/nme/software/pipelines/nf_rnaseq")
+prepend_path("PATH", "/cluster/work/nme/software/pipelines/nf_cutntag")
+prepend_path("PATH", "/cluster/work/nme/software/pipelines/nf_methylseq")
+prepend_path("PATH", "/cluster/work/nme/software/pipelines/nf_peakcalling")
+prepend_path("PATH", "/cluster/work/nme/software/pipelines/nf_fetchgeo")
+prepend_path("PATH", "/cluster/work/nme/software/pipelines/nf_qc")
 prepend_path("PATH", "/cluster/work/nme/software/apps/nextflow/24.04.2")
 
 load("openjdk")
