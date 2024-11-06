@@ -30,6 +30,9 @@ setenv("NXF_ASSETS", "/cluster/work/nme/tmp/.nextflow_assets")
 setenv("HTTP_PROXY", "http://proxy.service.consul:3128")
 setenv("HTTPS_PROXY", "http://proxy.service.consul:3128")
 setenv("FTP_PROXY", "http://proxy.service.consul:3128")
+setenv("http_proxy", "http://proxy.service.consul:3128")
+setenv("https_proxy", "http://proxy.service.consul:3128")
+setenv("ftp_proxy", "http://proxy.service.consul:3128")
 setenv("NXF_OFFLINE", "TRUE")
 
 -- Setting alias for Nextflow
